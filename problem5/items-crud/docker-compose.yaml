@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  nest-crud-service:
+    build: .
+    container_name: nest-crud-service
+    ports:
+      - "3000:3000"
+    volumes:
+      - sqlite-data:/app/data  # Keep only the data volume
+    environment:
+      - PORT=3000
+      - DB_TYPE=sqlite
+      - DB_DATABASE=/app/data/database.sqlite
+    command: ["node", "dist/main.js"]
+volumes:
+  sqlite-data:
