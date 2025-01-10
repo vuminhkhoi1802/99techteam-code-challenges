@@ -169,15 +169,7 @@ Below is a more AWS-specific outline:
 
 ---
 
-## 8. Diagram (Excalidraw)
-
-You can share a link to your **Excalidraw** diagram here or embed an exported image. For example:
-
-> [Excalidraw Diagram (AWS Example)](https://excalidraw.com/#room=exampleRoomId,exampleHash)
-
----
-
-## 9. Conclusion
+## 8. Conclusion
 
 By leveraging AWS services like **API Gateway**, **Lambda**, and **DynamoDB** (with optional **ElastiCache** or **Redis**), we can build a **scalable** and **real-time** scoreboard update solution. AWS services simplify tasks like **authentication** (Cognito), **real-time updates** (WebSocket or AppSync), and **infrastructure management** (CloudFormation). The system satisfies:
 
